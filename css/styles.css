@@ -86,8 +86,26 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    transition: 0.35s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.decor-studio {
+    position: relative;
+}
+.decor-studio::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    bottom: -33px;
+    background: #2196F3;
+    border-radius: 2px;
+    
+}
+/* .decor-studio:hover::after {
+    height: 4px;
+} */
 
 .studio:hover,
 .studio:focus,
@@ -113,7 +131,8 @@ img {
     font-size: 14px;
     line-height: 1.14;
     color: rgba(117, 117, 117, 1);
-    transition: 0.4s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-icon {
     margin-right: 10px;
@@ -121,7 +140,8 @@ img {
     max-height: 16px;
     fill: #757575;
     /* outline: 1px solid red; */
-    transition: 0.4s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-header-contacts:hover {
     color: var(--main-hover-focus-font-color);
@@ -175,6 +195,24 @@ img {
 .hero-button:hover,
 .hero-button:focus {
     cursor: pointer;
+}
+/* Модальное окно */
+.backdrop {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible; */
+    /* transition: opacyti; */
+
+    /* background: #FFFFFF; */
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 100vw;
+    height: 100vh; */
 }
 /* Особенности */
 /* .desapear {
@@ -240,6 +278,29 @@ img {
 }
 .space {
     justify-content: space-between;
+}
+.about-us-card {
+    position: relative;
+}
+.about-us-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 24%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 /* Наша команда */
 .our-comand {
@@ -317,14 +378,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.4s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item-social-icon {
     max-width: 20px;
     max-height: 20px;
     fill: #AFB1B8;
     /* outline: 1px solid red; */
-    transition: 0.4s;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-item-social-link:hover {
     background-color: var(--main-hover-focus-font-color);
@@ -353,7 +416,8 @@ img {
     height: 92px;
     fill: #AFB1B8;
     /* outline: 1px solid red; */
-    transition: 0.9s; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-icon:hover {
     fill: var(--main-hover-focus-font-color);
@@ -482,12 +546,26 @@ img {
     margin-bottom: 30px;
     /* max-width: calc((100%-60px) / 3);
     margin-right: 30px; */
+    position: relative;
 }
 
 .portfolio-item:hover {
     box-shadow: 1px 6px 6px rgb(229, 229, 229, 0.9);
 }
-
+.portfolio-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 27%;
+    height: 0%;
+    width: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-item:hover::after  {
+    height: 73%;
+}
 /*
  .portfolio-item:nth-child(3n + 3) {
     margin-right: 0px;

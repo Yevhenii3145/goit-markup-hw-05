@@ -25,7 +25,8 @@
             <nav class="flex">
                 <a class="logo" href="./index.html"><span class="span-l">Web</span>Studio</a>
                 <ul class="flex">
-                    <li><a class="studio studio-activ  " href="./index.html">Студия</a></li>
+                    <li class="decor-studio"><a class="studio studio-activ  " href="./index.html">Студия</a>
+                    </li>
                     <li class="item">
                         <a class="studio" href="./portfolio.html">Портфолио</a>
                     </li>
@@ -56,8 +57,23 @@
         <section class="hero">
             <div class="hero-orientation">
                 <h1 class="ferst-header">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
-            </div>
+
+                <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+           
+                <div data-modal class="backdrop is-hidden">
+                
+                    <div class="modal">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam magnam facere ex eos quis sapiente culpa voluptatum nam sed voluptas vitae saepe, illo, fugiat quas cumque facilis aut porro unde.
+                        Numquam unde corrupti temporibus quisquam nihil, iste nesciunt consequuntur tempora dolore dolor impedit veniam fugiat error culpa! Quis a dolorem facere repellendus nulla atque ipsum, distinctio fuga necessitatibus, ea fugiat!
+                        Eligendi similique reprehenderit et, vero inventore impedit commodi fugit quibusdam, velit officiis, minus fuga. Assumenda sed eum perferendis quas animi minus maxime, ullam neque dolore debitis illum in odit ducimus?
+                        At neque nobis, dolores sit quae earum. Ullam corporis nisi, ratione accusamus laborum sequi voluptatibus tempora quibusdam alias, quam nulla maxime quos necessitatibus iste quidem debitis maiores soluta? Commodi, inventore.
+                        Ullam incidunt doloribus illo dicta consequatur modi voluptatibus corrupti! Tempore laudantium corporis tenetur quia quae veritatis harum nobis repudiandae debitis qui? Aspernatur obcaecati nostrum amet ratione illo magni sit iure.</p>
+                        
+                        <button data-modal-close>Закрыть</button>
+                    </div>
+                    
+                
+                </div>
         </section>
         <!-- Особенности -->
         <section class="our-peculiarities">
@@ -116,17 +132,20 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                 <div class="what-content">
                     <ul class="flex space">
-                        <li>
+                        <li class="about-us-card">
                             <img src="images/about-us/box-1.jpg" alt="Здесь изображен процесс написания кода"
                                 width="370">
+                                <p class="about-us-text">Десктопные приложения</p>
                         </li>
-                        <li>
+                        <li class="about-us-card">
                             <img src="images/about-us/box-2.jpg"
                                 alt="Здесь изображен процесс адаптации под различные мобильные устройства" width="370">
+                                <p class="about-us-text">Мобильные приложения</p>
                         </li>
-                        <li>
+                        <li class="about-us-card">
                             <img src="images/about-us/box-3.jpg"
                                 alt="Здесь изображен процесс создания дизайна-выбор цвета из палитры" width="370">
+                                <p class="about-us-text">Дизайнерские решения</p>
                         </li>
                     </ul>
                 </div>
@@ -380,8 +399,8 @@
             </div>
         </div>
 
-
     </footer>
+    <script src="/js/modal.js"></script>
 </body>
 
 </html>
