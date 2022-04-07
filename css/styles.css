@@ -191,6 +191,8 @@ img {
     text-align: center;
     color: var(--button-hover-focus-font-color);
     margin-left: 247px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus {
