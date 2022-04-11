@@ -610,7 +610,9 @@ img {
     /* max-width: calc((100%-60px) / 3);
     margin-right: 30px; */
     position: relative;
+
 }
+
 .portfolio-card-image {
     position: relative;
     overflow: hidden;
@@ -634,6 +636,10 @@ img {
 }
 .portfolio-item:hover .potfolio-card-capture {
     top: 0%;
+    box-shadow: 1px 6px 6px rgb(229, 229, 229, 0.9);
+}
+.portfolio-item:hover {
+    box-shadow: 1px 6px 6px rgb(229, 229, 229, 0.9);
 }
 .portfolio-card-capture-text {
     font-size: 18px;
@@ -642,9 +648,8 @@ img {
     color: #FFFFFF;
 
 }
-/* .portfolio-item:hover {
-    box-shadow: 1px 6px 6px rgb(229, 229, 229, 0.9);
-}
+ /*  */
+/*
 .portfolio-item::after {
     content: "";
     position: absolute;
